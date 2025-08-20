@@ -142,6 +142,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
             border-top: 4px solid var(--vermelho);
+            cursor: pointer;
         }
         
         .curso-card:hover {
@@ -179,6 +180,10 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             border-left: 4px solid var(--amarelo);
             transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            cursor: pointer;
         }
         
         .contact-card:hover {
@@ -192,9 +197,28 @@
             margin-bottom: 1rem;
         }
         
-        .contact-card h3 {
+        .contact-name {
             color: var(--vermelho);
             margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .contact-info {
+            margin-bottom: 1rem;
+            color: var(--cinza-escuro);
+        }
+        
+        .contact-cta {
+            display: inline-block;
+            margin-top: 0.8rem;
+            color: var(--vermelho);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover .contact-cta {
+            color: var(--vermelho-escuro);
         }
         
         .tiktok-note {
@@ -362,42 +386,60 @@
         </div>
         
         <div class="contact-grid">
-            <div class="contact-card">
+            <a href="https://wa.me/5513996631129?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20do%20Instituto%20Mix%20Itanhaém.%20Pode%20me%20enviar%20informações%20sobre%20turmas,%20horários%20e%20valores?" class="contact-card" target="_blank" rel="noopener">
                 <div class="contact-icon">
                     <i class="fab fa-whatsapp"></i>
                 </div>
-                <h3>WhatsApp</h3>
-                <p>(13) 99663-1129</p>
-                <a href="https://wa.me/5513996631129?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20do%20Instituto%20Mix%20Itanhaém.%20Pode%20me%20enviar%20informações%20sobre%20turmas,%20horários%20e%20valores?" class="btn">Enviar mensagem</a>
-            </div>
+                <h3 class="contact-name">WhatsApp</h3>
+                <p class="contact-info">(13) 99663-1129</p>
+                <span class="contact-cta">Enviar mensagem →</span>
+            </a>
             
-            <div class="contact-card">
+            <a href="https://www.instagram.com/institutomixitanhaem/?hl=pt-br" class="contact-card" target="_blank" rel="noopener">
                 <div class="contact-icon">
                     <i class="fab fa-instagram"></i>
                 </div>
-                <h3>Instagram</h3>
-                <p>@institutomixitanhaem</p>
-                <a href="https://www.instagram.com/institutomixitanhaem/?hl=pt-br" class="btn btn-vermelho">Seguir</a>
-            </div>
+                <h3 class="contact-name">Instagram</h3>
+                <p class="contact-info">@institutomixitanhaem</p>
+                <span class="contact-cta">Seguir →</span>
+            </a>
             
-            <div class="contact-card">
+            <a href="https://www.facebook.com/InstitutoMixItanhaem/" class="contact-card" target="_blank" rel="noopener">
                 <div class="contact-icon">
                     <i class="fab fa-facebook"></i>
                 </div>
-                <h3>Facebook</h3>
-                <p>InstitutoMixItanhaem</p>
-                <a href="https://www.facebook.com/InstitutoMixItanhaem/" class="btn btn-vermelho">Curta nossa página</a>
-            </div>
+                <h3 class="contact-name">Facebook</h3>
+                <p class="contact-info">InstitutoMixItanhaem</p>
+                <span class="contact-cta">Curta nossa página →</span>
+            </a>
             
-            <div class="contact-card">
+            <a href="https://www.tiktok.com/@institutomixoficial" class="contact-card" target="_blank" rel="noopener">
                 <div class="contact-icon">
                     <i class="fab fa-tiktok"></i>
                 </div>
-                <h3>TikTok</h3>
-                <p>@institutomixoficial</p>
+                <h3 class="contact-name">TikTok</h3>
+                <p class="contact-info">@institutomixoficial</p>
                 <p class="tiktok-note">(Conta oficial - Brasil)</p>
-                <a href="https://www.tiktok.com/@institutomixoficial" class="btn btn-vermelho">Seguir no TikTok</a>
-            </div>
+                <span class="contact-cta">Seguir no TikTok →</span>
+            </a>
+            
+            <a href="https://www.institutomix.com.br/" class="contact-card" target="_blank" rel="noopener">
+                <div class="contact-icon">
+                    <i class="fas fa-globe"></i> 
+                </div>
+                <h3 class="contact-name">Site</h3>
+                <p class="contact-info">Portal Institucional</p>
+                <span class="contact-cta">Visite nosso site →</span>
+            </a>
+            
+            <a href="https://institutomix.com.br/vestibulinho/" class="contact-card" target="_blank" rel="noopener">
+                <div class="contact-icon">
+                    <i class="fas fa-graduation-cap"></i> 
+                </div>
+                <h3 class="contact-name">Vestibulinho</h3>
+                <p class="contact-info">Inscrições Online</p>
+                <span class="contact-cta">Inscreva-se →</span>
+            </a>
         </div>
     </section>
     
@@ -416,8 +458,7 @@
             <p>Instituto Mix Itanhaém - Formando profissionais desde 2013</p>
             <p>Av. Condessa de Vimieiros, 141 - Centro, Itanhaém - SP</p>
             <p>Telefone: (13) 99663-1129</p>
-
-                        
+           
             <div class="dev-contact">
                 <p>Site desenvolvido por: wanderson_qaz@hotmail.com</p>
             </div>
